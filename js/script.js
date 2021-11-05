@@ -3,15 +3,15 @@ let domElement = document.getElementById("babylonViewer");
 const conf = {
   zoom: {
     minDistance: 2.1,
-    maxDistance: 33, //not working
+    maxDistance: 33 //not working
   },
   backgroundColor: {
     //  (r: 0, g: 0, b: 0, a: 0) = transparente background
     r: 0,
     g: 0,
     b: 0,
-    a: 0,
-  },
+    a: 0
+  }
 };
 // let modelUrl = domElement.getAttribute("data-dior-asset-url");
 /*
@@ -67,7 +67,7 @@ function viewerObservables(viewer) {
     scene.cameras[0].upperRadiusLimit = conf.zoom.maxDistance; // maxDistance zoom Camera
     console.log({
       lrl: scene.cameras[0].lowerRadiusLimit,
-      url: scene.cameras[0].upperRadiusLimit,
+      url: scene.cameras[0].upperRadiusLimit
     });
 
     //remove bouncing
